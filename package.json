@@ -1,0 +1,12 @@
+{
+  "name": "counting-trainer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline iPhone web app for practicing Blackjack card counting (training only)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "stamp": "node tools/stamp.mjs --src . --out _site"
+  },
+  "engines": { "node": ">=22" }
+}

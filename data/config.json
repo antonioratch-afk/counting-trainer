@@ -1,0 +1,14 @@
+{
+  "version": "1",
+  "itemsPerTest": { "values": 50, "running": 20, "strategy": 50 },
+  "reviewItems": { "values": 20, "running": 10, "strategy": 20 },
+  "thresholdPct": { "values": 98, "running": 95, "strategy": 96 },
+  "daysToPass": 3,
+  "stopMin": 10,
+  "stopMax": 45,
+  "timedRemovedMin": 1,
+  "timedRemovedMax": 3,
+  "timedTargetSec": 30,
+  "abandonAfterMin": 30,
+  "dayOffsetHours": 7
+}

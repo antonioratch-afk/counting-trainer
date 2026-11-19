@@ -1,0 +1,122 @@
+// Thai UI strings. t('key', { name }) replaces {name}. A missing key returns the key and logs an error.
+export const TH = {
+  'app.title': 'Counting Trainer',
+  'app.trainingOnly': 'แอปนี้ใช้ฝึกทักษะเท่านั้น ไม่มีการพนันหรือเงินจริง',
+
+  'step.values': 'ขั้น 1 ค่าไพ่',
+  'step.running': 'ขั้น 2 นับไพ่ต่อเนื่อง',
+  'step.strategy': 'ขั้น 3 กลยุทธ์พื้นฐาน',
+
+  'action.H': 'จั่ว',
+  'action.S': 'หยุด',
+  'action.D': 'ดับเบิล',
+  'action.P': 'แยก',
+  'action.R': 'ยอมแพ้',
+
+  'mode.learn': 'โหมดเรียน',
+  'mode.test': 'โหมดสอบ',
+  'mode.review': 'ทบทวน',
+
+  'home.days': 'ผ่านแล้ว {n} จาก {need} วัน',
+  'home.passed': 'ผ่านขั้นนี้แล้ว',
+  'home.today.none': 'วันนี้ยังไม่ได้สอบ',
+  'home.today.passed': 'สอบวันนี้แล้ว: ผ่าน',
+  'home.today.failed': 'สอบวันนี้แล้ว: ไม่ผ่าน (พรุ่งนี้สอบใหม่ได้)',
+  'home.today.open': 'การสอบของวันนี้ยังไม่จบ ทำต่อได้ภายใน 30 นาที',
+  'home.devMode': 'โหมดพัฒนา: ยังไม่มีการเก็บไฟล์ไว้ใช้ออฟไลน์',
+  'home.last': 'ครั้งล่าสุด {pct}%',
+  'home.cells': 'ตอบถูกแล้ว {n} จาก {total} ช่อง',
+  'home.lesson': 'บทเรียน',
+  'home.learn': 'เรียน',
+  'home.test': 'สอบ',
+  'home.review': 'ทบทวน',
+  'home.timed': 'จับเวลา',
+  'home.resume': 'ทำต่อ: {step} ({mode}) {done}/{len}',
+  'home.offlineReady': 'พร้อมใช้แบบออฟไลน์',
+  'home.offlinePending': 'กำลังเก็บไฟล์ไว้ใช้ออฟไลน์...',
+  'home.cacheError': 'เก็บไฟล์ไว้ใช้ออฟไลน์ไม่สำเร็จ ลองเปิดแอปตอนมีเน็ตอีกครั้ง',
+  'home.lastBackup': 'สำรองข้อมูลล่าสุด {n} วันก่อน',
+  'home.noBackup': 'ยังไม่เคยสำรองข้อมูล',
+  'home.backup': 'สำรอง / กู้คืนข้อมูล',
+  'home.diag': 'ข้อมูลระบบ',
+  'home.update': 'มีเวอร์ชันใหม่ แตะเพื่ออัปเดต',
+  'home.restore': 'กู้คืนจากไฟล์',
+  'home.start': 'เริ่มที่ขั้น 1',
+  'home.dropped': '{step} กลับเป็นยังไม่ผ่าน เพราะเกณฑ์หรือตารางมีการเปลี่ยนแปลง',
+  'home.version': 'เวอร์ชัน {build} · ตาราง {chart} · ค่าตั้ง {cfg}',
+
+  'install.title': 'ติดตั้งลงหน้าจอโฮม',
+  'install.steps': 'ใน Safari แตะปุ่มแชร์ แล้วเลือก "เพิ่มไปยังหน้าจอโฮม"',
+  'install.warn': 'สิ่งที่ฝึกในแท็บ Safari จะไม่ถูกย้ายไปที่แอปที่ติดตั้ง',
+  'install.online': 'หลังติดตั้ง ให้เปิดแอปจากไอคอนหนึ่งครั้งตอนมีเน็ต รอจนขึ้นว่าพร้อมใช้แบบออฟไลน์',
+
+  'drill.next': 'ถัดไป',
+  'drill.nextCard': 'ไพ่ใบถัดไป',
+  'drill.done': 'ไพ่หมดแล้ว นับได้เท่าไร?',
+  'drill.ok': 'ตกลง',
+  'drill.right': 'ถูก',
+  'drill.wrong': 'ผิด คำตอบคือ {expected}',
+  'drill.finish': 'จบ',
+  'drill.progress': '{done} / {len}',
+  'drill.cardNo': 'ใบที่ {n}',
+  'drill.running': 'นับรวม {n}',
+  'drill.dealer': 'เจ้ามือ',
+  'drill.you': 'คุณ',
+  'drill.leftApp': 'ข้อนี้นับว่าผิดเพราะออกจากแอป',
+  'drill.leftAppVoid': 'ข้อนี้ไม่ถูกนับเพราะออกจากแอป',
+  'drill.reference': 'ตารางอ้างอิง',
+  'drill.noReview': 'ยังไม่มีข้อที่พลาดให้ทบทวน ลองโหมดเรียนก่อน',
+  'drill.toLearn': 'ไปโหมดเรียน',
+  'drill.home': 'กลับหน้าหลัก',
+  'drill.result': 'ได้ {correct} จาก {total} ({pct}%)',
+  'drill.metBar': 'ผ่านเกณฑ์ {pct}%',
+  'drill.missedBar': 'ยังไม่ถึงเกณฑ์ {pct}%',
+  'drill.counted': 'ครั้งนี้เป็นการสอบที่นับของวันนี้',
+  'drill.notCounted': 'ครั้งนี้ไม่ถูกนับ เพราะวันนี้มีการสอบที่นับไปแล้ว',
+  'drill.export': 'สำรองข้อมูลตอนนี้',
+  'drill.testNote': 'โหมดสอบ: นับเฉพาะการสอบครั้งแรกของวัน ออกจากแอประหว่างข้อจะนับว่าผิด',
+
+  'timed.title': 'จับเวลานับไพ่หนึ่งสำรับ',
+  'timed.hint': 'มีไพ่ถูกนำออก 1-3 ใบโดยไม่ให้เห็น ผลรวมจึงไม่เป็น 0 เสมอ',
+  'timed.start': 'เริ่ม',
+  'timed.result': '{sec} วินาที (เป้าหมาย {target})',
+  'timed.history': 'ผล 10 ครั้งล่าสุด',
+  'timed.discarded': 'รอบนี้ถูกยกเลิกเพราะออกจากแอป',
+
+  'backup.title': 'สำรองและกู้คืนข้อมูล',
+  'backup.share': 'แชร์ไฟล์สำรอง',
+  'backup.copy': 'คัดลอกเป็นข้อความ',
+  'backup.copied': 'คัดลอกแล้ว',
+  'backup.shareUnsupported': 'แชร์ไฟล์ไม่ได้ ใช้ปุ่มคัดลอกแทน',
+  'backup.importFile': 'นำเข้าจากไฟล์',
+  'backup.importPaste': 'นำเข้าจากข้อความที่วาง',
+  'backup.cancel': 'ยกเลิก',
+  'backup.preview': 'จะเพิ่ม {add} รายการ ซ้ำ {dup} ไม่ถูกต้อง {bad}',
+  'backup.confirm': 'ยืนยันนำเข้า',
+  'backup.result': 'นำเข้าแล้ว {add} รายการ',
+  'backup.error.empty': 'ไม่มีข้อมูล',
+  'backup.error.too-large': 'ไฟล์ใหญ่เกินไป',
+  'backup.error.not-json': 'ไฟล์ไม่ใช่ไฟล์สำรองของแอปนี้',
+  'backup.error.wrong-app': 'ไฟล์ไม่ใช่ไฟล์สำรองของแอปนี้',
+  'backup.error.wrong-schema': 'รูปแบบไฟล์ไม่ถูกต้อง',
+  'backup.error.newer-schema': 'ไฟล์มาจากแอปเวอร์ชันใหม่กว่า กรุณาอัปเดตแอปก่อน',
+
+  'diag.title': 'ข้อมูลระบบ',
+  'diag.copy': 'คัดลอกทั้งหมด',
+
+  'error.title': 'เกิดข้อผิดพลาด',
+  'error.newerDb': 'มีข้อมูลจากเวอร์ชันใหม่กว่า กรุณาอัปเดตแอป',
+  'error.config': 'ไฟล์ตั้งค่าหรือตารางไม่ถูกต้อง',
+  'error.noDb': 'เบราว์เซอร์นี้เก็บข้อมูลไม่ได้',
+  'common.back': 'กลับ',
+};
+
+export function t(key, params) {
+  let s = TH[key];
+  if (s === undefined) {
+    console.error(`missing string: ${key}`);
+    return key;
+  }
+  if (params) s = s.replace(/\{(\w+)\}/g, (m, k) => (params[k] !== undefined ? String(params[k]) : m));
+  return s;
+}
