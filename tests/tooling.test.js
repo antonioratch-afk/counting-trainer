@@ -37,7 +37,8 @@ function walk(dir) {
 
 test('i18n: every t(\'key\') used in src exists in th.js; no keys are built at run time', () => {
   const missing = [];
-  for (const file of walk(join(ROOT, 'src')).filter((f) => f.endsWith('.js'))) {
+  // th.js itself is skipped: its header comment shows t('key', ...) as an example.
+  for (const file of walk(join(ROOT, 'src')).filter((f) => f.endsWith('.js') && !f.endsWith('th.js'))) {
     const text = readFileSync(file, 'utf8');
     for (const m of text.matchAll(/\bt\('([a-z0-9_.-]+)'/g)) if (!(m[1] in TH)) missing.push(`${file}: ${m[1]}`);
   }
